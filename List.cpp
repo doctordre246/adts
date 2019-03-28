@@ -90,6 +90,24 @@ void List::remove(int k)
 	delete delPtr;
 	num_elements--;
 	}
+	void List :: clear(){
+		
+		
+	while(num_elements > 0)
+	  remove(1);
 	
+		
+		
+		}
+	{
+		
+		if (k < 1 || k > num_elements +1) //if the location is invalid
+	     throw out_of_range("List::insert(...)");//throw an "out_of_range" exception
+	     
+	     while (k = 0; k 
+		
+		
+		}
+		
 	//Implementations of missing operations
 	
