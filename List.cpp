@@ -90,14 +90,27 @@ void List::remove(int k)
 	delete delPtr;
 	num_elements--;
 	}
-	void List :: getAt(int k){
+	int List :: getAt(int k){
 		if (k < 1 or k > num_elements)//if the location is invalid
-		throw out_of_range("List::insert("+to_string(val)+", " +to_string(k)+") failed. (valid indices are 1 to "+to_string(num_elements+1)+")");//throw an "out_of_range" exception
+		throw out_of_range("List::Get(" +to_string(k)+") failed. (valid indices are 1 to "+to_string(num_elements+1)+")");//throw an "out_of_range" exception
+		
+		
+			Node* tempd = frontPtr;
+			
+			int next = 1;
+				
+				while (next > 0){
+					tempd = tempd ->link;
+					next--;
+				}
+				
+		return tempd->data;
+		
 		
 		
 			
 		}
-		}
+		
 	void List :: clear(){
 		  while(num_elements > 0)
       remove(1);

@@ -19,7 +19,7 @@ class List //begin List definition
      void remove(int k);//remove element at location k
      int size();//return the number of elements in the List
      void clear();
-     void getAt(int k);
+     int getAt(int k);
      
      
      

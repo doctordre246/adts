@@ -12,27 +12,33 @@ List L1, L2;
 	L1.insert(3, 3);
 	L1.insert(4, 2);
 	L1.insert(5, 1);
+	L2.insert(1, 1);
+	L2.insert(2, 2);
+	L2.insert(3, 3);
+	L2.insert(4, 2);
+	L2.insert(5, 1);
  
- for (int i =0; i < L1.size(); i++){
-	cout << L1.size();
+ for (int i =1; i <= L1.size(); i++){
+	cout << L1.getAt(i)<<"\n";
+	cout << L2.getAt(i)<<"\n";
 }
-L1.clear();
-	for (int i =0; i < L1.size(); i++){
-		cout<<L1;
-	}
-L2.clear();
-	for (int i =0; i < L2.size(); i++){
-		cout<<L1.size();
-	}
-L1.size();	
-	for (int i =0; i < L1.size(); i++){
-		cout<<L1.size();
-	}
-L1.remove(1);
-L1.remove(3);
-	for (int i =0; i < L1.size(); i++){
-		cout<<L1;
-	}
+//L1.clear();
+//	for (int i =1; i <= L1.size(); i++){
+//		cout << L1.getAt(i);
+//	}
+//L2.clear();
+	//for (int i =1; i <= L2.size(); i++){
+		//cout<<L1.getAt(i);
+	//}
+//L1.size();	
+	//for (int i =1; i <= L1.size(); i++){
+		//cout<<L1.getAt(i);
+	//}
+//L1.remove(1);
+//L1.remove(3);
+	//for (int i =1; i <= L1.size(); i++){
+		//cout<<L1.getAt(i);
+	//}
 	
 	
 	// for (initialize ; comparison ; increment)
